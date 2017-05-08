@@ -1,5 +1,5 @@
 #include <iostream>
-#include <curses.h>
+//#include <curses.h>
 using namespace std;
 
 
@@ -14,6 +14,7 @@ void viewMessages();
 int main()
 {
     displayMenu();
+	system("pause");
     return 0;
 }
 
@@ -23,9 +24,9 @@ void displayMenu()
 {
     int choice = 0;
     
-    do
+	do
     {
-        //system("clear");
+        system("cls");
         
         cout << "Hello, welcome to Swim. What would you like to do?" << endl;
         cout << "1) Register user." << endl;
@@ -37,10 +38,10 @@ void displayMenu()
         
         switch (choice)
         {
-            case 1: registerUser(); break;
-            case 2: displayUsers(); break;
-            case 3: sendMessage(); break;
-            case 4: viewMessages(); break;
+			case 1: registerUser(); break;
+			case 2: displayUsers(); break;
+			case 3: sendMessage(); break;
+			case 4: viewMessages(); break;
             default: break;
         }
         
@@ -54,6 +55,7 @@ void displayMenu()
 void registerUser()
 {
     cout << "User Registered! " << endl;
+	system("pause");
 }
 
 
@@ -61,6 +63,7 @@ void registerUser()
 void displayUsers()
 {
     cout << "Here are the users. " << endl;
+	system("pause");
 }
 
 
@@ -68,6 +71,7 @@ void displayUsers()
 void sendMessage()
 {
     cout << "Message sent! " << endl;
+	system("pause");
 }
 
 
@@ -75,4 +79,5 @@ void sendMessage()
 void viewMessages()
 {
     cout << "You have no new messages. " << endl;
+	system("pause");
 }
