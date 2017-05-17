@@ -1,20 +1,21 @@
 #include <iostream>
+#include "account.h"
+#include "business.h"
+#include "message.h"
+#include "sportsTeam.h"
+#include "user.h"
 //#include <curses.h>
 using namespace std;
 
 
 void displayMenu();
-void registerUser();
-void displayUsers();
-void sendMessage();
-void viewMessages();
 
 
 
 int main()
 {
     displayMenu();
-	system("pause");
+	//system("pause");
     return 0;
 }
 
@@ -26,7 +27,7 @@ void displayMenu()
     
 	do
     {
-        system("cls");
+        //system("cls");
         
         cout << "Hello, welcome to Swim. What would you like to do?" << endl;
         cout << "1) Register user." << endl;
@@ -52,32 +53,3 @@ void displayMenu()
 
 
 
-void registerUser()
-{
-    cout << "User Registered! " << endl;
-	system("pause");
-}
-
-
-
-void displayUsers()
-{
-    cout << "Here are the users. " << endl;
-	system("pause");
-}
-
-
-
-void sendMessage()
-{
-    cout << "Message sent! " << endl;
-	system("pause");
-}
-
-
-
-void viewMessages()
-{
-    cout << "You have no new messages. " << endl;
-	system("pause");
-}

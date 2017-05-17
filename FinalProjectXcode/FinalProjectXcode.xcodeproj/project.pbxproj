@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B522F8CB1ECCACB300EAF716 /* account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B522F8C11ECCACB300EAF716 /* account.cpp */; };
+		B522F8CC1ECCACB300EAF716 /* user.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B522F8C21ECCACB300EAF716 /* user.cpp */; };
+		B522F8CD1ECCACB300EAF716 /* sportsTeam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B522F8C41ECCACB300EAF716 /* sportsTeam.cpp */; };
+		B522F8CE1ECCACB300EAF716 /* message.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B522F8C61ECCACB300EAF716 /* message.cpp */; };
+		B522F8CF1ECCACB300EAF716 /* business.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B522F8C91ECCACB300EAF716 /* business.cpp */; };
 		B5358EA61EBA3F4500511ABB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5358EA51EBA3F4500511ABB /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +28,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B522F8C11ECCACB300EAF716 /* account.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = account.cpp; sourceTree = "<group>"; };
+		B522F8C21ECCACB300EAF716 /* user.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = user.cpp; sourceTree = "<group>"; };
+		B522F8C31ECCACB300EAF716 /* sportsTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sportsTeam.h; sourceTree = "<group>"; };
+		B522F8C41ECCACB300EAF716 /* sportsTeam.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sportsTeam.cpp; sourceTree = "<group>"; };
+		B522F8C51ECCACB300EAF716 /* message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message.h; sourceTree = "<group>"; };
+		B522F8C61ECCACB300EAF716 /* message.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = message.cpp; sourceTree = "<group>"; };
+		B522F8C71ECCACB300EAF716 /* user.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = user.h; sourceTree = "<group>"; };
+		B522F8C81ECCACB300EAF716 /* business.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = business.h; sourceTree = "<group>"; };
+		B522F8C91ECCACB300EAF716 /* business.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = business.cpp; sourceTree = "<group>"; };
+		B522F8CA1ECCACB300EAF716 /* account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = account.h; sourceTree = "<group>"; };
 		B5358EA21EBA3F4500511ABB /* FinalProjectXcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FinalProjectXcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5358EA51EBA3F4500511ABB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +73,16 @@
 			isa = PBXGroup;
 			children = (
 				B5358EA51EBA3F4500511ABB /* main.cpp */,
+				B522F8CA1ECCACB300EAF716 /* account.h */,
+				B522F8C11ECCACB300EAF716 /* account.cpp */,
+				B522F8C81ECCACB300EAF716 /* business.h */,
+				B522F8C91ECCACB300EAF716 /* business.cpp */,
+				B522F8C51ECCACB300EAF716 /* message.h */,
+				B522F8C61ECCACB300EAF716 /* message.cpp */,
+				B522F8C31ECCACB300EAF716 /* sportsTeam.h */,
+				B522F8C41ECCACB300EAF716 /* sportsTeam.cpp */,
+				B522F8C71ECCACB300EAF716 /* user.h */,
+				B522F8C21ECCACB300EAF716 /* user.cpp */,
 			);
 			path = FinalProjectXcode;
 			sourceTree = "<group>";
@@ -120,6 +145,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5358EA61EBA3F4500511ABB /* main.cpp in Sources */,
+				B522F8CF1ECCACB300EAF716 /* business.cpp in Sources */,
+				B522F8CD1ECCACB300EAF716 /* sportsTeam.cpp in Sources */,
+				B522F8CB1ECCACB300EAF716 /* account.cpp in Sources */,
+				B522F8CE1ECCACB300EAF716 /* message.cpp in Sources */,
+				B522F8CC1ECCACB300EAF716 /* user.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +278,7 @@
 				B5358EAB1EBA3F4500511ABB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
