@@ -110,9 +110,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\FinalProjectXcode\FinalProjectXcode\main.cpp" />
     <ClCompile Include="account.cpp" />
     <ClCompile Include="business.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="message.cpp" />
     <ClCompile Include="sportsTeam.cpp" />
     <ClCompile Include="user.cpp" />

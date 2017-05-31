@@ -9,13 +9,17 @@ using namespace std;
 
 
 void displayMenu();
+void registerUser();
+void displayUsers();
+void sendMessage();
+void viewMessages();
 
 
 
 int main()
 {
     displayMenu();
-	//system("pause");
+	system("pause");
     return 0;
 }
 
@@ -27,9 +31,9 @@ void displayMenu()
     
 	do
     {
-        //system("cls");
+        system("cls");
         
-        cout << "Hello, welcome to Swim. What would you like to do?" << endl;
+        cout << "Hello, welcome to AIM. What would you like to do?" << endl;
         cout << "1) Register user." << endl;
         cout << "2) Display users." << endl;
         cout << "3) Send message to user." << endl;
@@ -51,5 +55,22 @@ void displayMenu()
     } while (choice != 0);
 }
 
+void registerUser()
+{
 
+}
 
+void displayUsers()
+{
+
+}
+
+void sendMessage()
+{
+
+}
+
+void viewMessages()
+{
+
+}

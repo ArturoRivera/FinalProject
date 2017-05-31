@@ -1,12 +1,13 @@
 #pragma once
 #include <iostream>
+#include "account.h"
 
-class user
+class user : public account
 {
 private:
     std::string name;
     int age;
-    std::string userName;
+    
     
 public:
 	user();

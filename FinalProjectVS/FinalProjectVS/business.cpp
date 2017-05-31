@@ -2,7 +2,7 @@
 
 
 
-business::business()
+business::business(std::string userName) 
 {
 }
 
