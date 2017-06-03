@@ -10,9 +10,9 @@ private:
     
     
 public:
-	user();
+    user(std::string userName);
 	~user();
-    void registerUser();
+    void registerUserAccount();
     void displayUsers();
 };
 

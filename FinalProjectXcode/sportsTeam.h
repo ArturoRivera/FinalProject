@@ -8,7 +8,7 @@ private:
     std::string teamName;
 	std::string teamCity;
 public:
-	sportsTeam();
+    sportsTeam(std::string userName);
 	~sportsTeam();
     void registerSportsTeam();
     void displaySportsTeams();

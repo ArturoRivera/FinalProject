@@ -19,7 +19,7 @@ void viewMessages();
 int main()
 {
     displayMenu();
-	system("pause");
+	//system("pause");
     return 0;
 }
 
@@ -31,7 +31,7 @@ void displayMenu()
     
 	do
     {
-        system("cls");
+        //system("cls");
         
         cout << "Hello, welcome to AIM. What would you like to do?" << endl;
         cout << "1) Register user." << endl;
@@ -57,11 +57,44 @@ void displayMenu()
 
 void registerUser()
 {
-
+    int selection = -1;
+    
+    do
+    {
+        cout << "What type of user would you like to register as? Press 0 to go back to the main page." << endl;
+        cout << "1) User" << endl;
+        cout << "2) Sports Team" << endl;
+        cout << "3) Business" << endl;
+        cin >> selection;
+        
+        switch (selection)
+        {
+            case 1: user : registerUser(); break;
+            case 2: sportsTeam : registerUser(); break;
+            case 3: business : registerUser(); break;
+            default: break;
+        }
+        
+        
+        
+        
+        
+    } while (selection != 0);
 }
 
 void displayUsers()
 {
+    int selection = -1;
+    
+    do
+    {
+        cout << "Which accounts would you like to display? Press 0 to go back to the main page" << endl;
+        cout << "1) Users only." << endl;
+        cout << "2) Business only." << endl;
+        cout << "3) Sports Teams only." << endl;
+        cin >> selection;
+        
+    } while (selection != 0);
 
 }
 
