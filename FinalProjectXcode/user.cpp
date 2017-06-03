@@ -12,7 +12,7 @@ user::~user()
 {
 }
 
-void user::registerUserAccount()
+void user::registerUser()
 {
     cout << "User registered!" << endl;
 }

@@ -11,12 +11,16 @@
 class database
 {
 private:
-        std::vector<std::shared_ptr<account>> _accounts;
+    std::string _name;
+    std::vector<std::shared_ptr<account>> _accounts;
 
 public:
     
+    database(std::string name);
     database();
     ~database();
+    
+    void addDatabase(std::shared_ptr<database> newDatabase);
     
     
 };

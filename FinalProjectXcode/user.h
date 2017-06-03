@@ -12,7 +12,7 @@ private:
 public:
     user(std::string userName);
 	~user();
-    void registerUserAccount();
+    void registerUser();
     void displayUsers();
 };
 

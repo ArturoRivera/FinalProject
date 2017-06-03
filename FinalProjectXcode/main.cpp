@@ -27,6 +27,9 @@ int main()
 
 void displayMenu()
 {
+    
+    
+    
     int choice = 0;
     
 	do
@@ -58,6 +61,9 @@ void displayMenu()
 void registerUser()
 {
     int selection = -1;
+    string userName;
+    cout << "What would you like your Username to be?" << endl;
+    cin >> userName;
     
     do
     {
@@ -69,13 +75,11 @@ void registerUser()
         
         switch (selection)
         {
-            case 1: user : registerUser(); break;
-            case 2: sportsTeam : registerUser(); break;
-            case 3: business : registerUser(); break;
-            default: break;
+           // case 1: user::registerUser(); break;
+           // case 2: sportsTeam::registerSportsTeam(); break;
+           // case 3: business::registerBusiness(); break;
+           // default: break;
         }
-        
-        
         
         
         
@@ -100,10 +104,31 @@ void displayUsers()
 
 void sendMessage()
 {
+    int selection = -1;
+    string recipient;
+    
+    do
+    {
+        cout << "Who would you like to send a message to?" << endl;
+        cin >> recipient;
+        
+
+        
+    } while (selection != 0);
 
 }
 
 void viewMessages()
 {
+    int selection = -1;
+    string userName;
+    
+    do
+    {
+        cout << "Who's messages would you like to see?" << endl;
+        cin >> userName;
+        
+    } while (selection != 0);
+    
 
 }
