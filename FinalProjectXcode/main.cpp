@@ -60,30 +60,18 @@ void displayMenu()
 
 void registerUser()
 {
-    int selection = -1;
+    string firstName;
+    string lastName;
     string userName;
-    cout << "What would you like your Username to be?" << endl;
+    
+    cout << "Enter first name: ";
+    cin >> firstName;
+    cout << "Enter Last name: ";
+    cin >> lastName;
+    cout << "Enter username: ";
     cin >> userName;
     
-    do
-    {
-        cout << "What type of user would you like to register as? Press 0 to go back to the main page." << endl;
-        cout << "1) User" << endl;
-        cout << "2) Sports Team" << endl;
-        cout << "3) Business" << endl;
-        cin >> selection;
-        
-        switch (selection)
-        {
-           // case 1: user::registerUser(); break;
-           // case 2: sportsTeam::registerSportsTeam(); break;
-           // case 3: business::registerBusiness(); break;
-           // default: break;
-        }
-        
-        
-        
-    } while (selection != 0);
+     
 }
 
 void displayUsers()
@@ -131,4 +119,28 @@ void viewMessages()
     } while (selection != 0);
     
 
+}
+
+
+//Recursion examples
+
+int factorial(int n)
+{
+    if (n ==1 )
+    {
+        return n;
+    }
+    
+    return n * factorial(n - 1);
+}
+
+
+int secondFactorial(int n)
+{
+    while (n != 1)
+    {
+        return n *= factorial(n - 1);
+    }
+    
+    return n;
 }
