@@ -4,6 +4,7 @@
 
 business::business(std::string userName) : account(userName)
 {
+    setAccountType("Business");
 }
 
 

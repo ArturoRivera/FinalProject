@@ -4,6 +4,7 @@
 
 sportsTeam::sportsTeam(std::string userName) : account(userName)
 {
+    setAccountType("Sports Team");
 }
 
 

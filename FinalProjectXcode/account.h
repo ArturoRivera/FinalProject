@@ -13,5 +13,6 @@ public:
 	void setAccountType(std::string type);
 	std::string getAccountType() { return _accountType; }
 	std::string getName() const { return _userName; }
+    
 };
 

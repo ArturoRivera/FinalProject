@@ -2,7 +2,7 @@
 
 
 
-message::message()
+message::message(std::string bodyOfMessage) : message(bodyOfMessage)
 {
 }
 

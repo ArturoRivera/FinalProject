@@ -1,13 +1,14 @@
 #pragma once
+#include "account.h"
+#include <stack>
 #include <iostream>
 
 class message
 {
 public:
-	message();
+    message(std::string bodyOfMessage);
 	~message();
-    std::string sendMessage();
-    std::string viewMessages();
     
+    std::stack<account *>;
 };
 

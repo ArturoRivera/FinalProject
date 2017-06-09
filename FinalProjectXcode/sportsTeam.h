@@ -10,7 +10,6 @@ private:
 public:
     sportsTeam(std::string userName);
 	~sportsTeam();
-    void registerSportsTeam();
-    void displaySportsTeams();
+    
 };
 

@@ -10,8 +10,6 @@ private:
 public:
 	business(std::string userName);
 	~business();
-
-	void registerBusiness();
-	void displayBusinesses();
+    
 };
 
