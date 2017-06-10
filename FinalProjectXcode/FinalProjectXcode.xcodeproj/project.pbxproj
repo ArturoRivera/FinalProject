@@ -12,7 +12,6 @@
 		B59CF4061EE10EA000F95FA9 /* sportsTeam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59CF3FC1EE10EA000F95FA9 /* sportsTeam.cpp */; };
 		B59CF4071EE10EA000F95FA9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59CF3FD1EE10EA000F95FA9 /* main.cpp */; };
 		B59CF4081EE10EA000F95FA9 /* user.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59CF4001EE10EA000F95FA9 /* user.cpp */; };
-		B59CF4091EE10EA000F95FA9 /* message.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59CF4011EE10EA000F95FA9 /* message.cpp */; };
 		B5A336FE1EEA395000DD83BD /* database.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5A336FD1EEA395000DD83BD /* database.cpp */; };
 /* End PBXBuildFile section */
 
@@ -38,8 +37,6 @@
 		B59CF3FE1EE10EA000F95FA9 /* business.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = business.h; sourceTree = SOURCE_ROOT; };
 		B59CF3FF1EE10EA000F95FA9 /* sportsTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sportsTeam.h; sourceTree = SOURCE_ROOT; };
 		B59CF4001EE10EA000F95FA9 /* user.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = user.cpp; sourceTree = SOURCE_ROOT; };
-		B59CF4011EE10EA000F95FA9 /* message.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = message.cpp; sourceTree = SOURCE_ROOT; };
-		B59CF4021EE10EA000F95FA9 /* message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message.h; sourceTree = SOURCE_ROOT; };
 		B59CF4031EE10EA000F95FA9 /* user.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = user.h; sourceTree = SOURCE_ROOT; };
 		B5A336FC1EEA377900DD83BD /* database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = database.h; sourceTree = SOURCE_ROOT; };
 		B5A336FD1EEA395000DD83BD /* database.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = database.cpp; sourceTree = SOURCE_ROOT; };
@@ -82,8 +79,6 @@
 				B59CF3FE1EE10EA000F95FA9 /* business.h */,
 				B5A336FD1EEA395000DD83BD /* database.cpp */,
 				B5A336FC1EEA377900DD83BD /* database.h */,
-				B59CF4021EE10EA000F95FA9 /* message.h */,
-				B59CF4011EE10EA000F95FA9 /* message.cpp */,
 				B59CF3FC1EE10EA000F95FA9 /* sportsTeam.cpp */,
 				B59CF3FF1EE10EA000F95FA9 /* sportsTeam.h */,
 				B59CF4001EE10EA000F95FA9 /* user.cpp */,
@@ -155,7 +150,6 @@
 				B59CF4071EE10EA000F95FA9 /* main.cpp in Sources */,
 				B59CF4081EE10EA000F95FA9 /* user.cpp in Sources */,
 				B59CF4051EE10EA000F95FA9 /* business.cpp in Sources */,
-				B59CF4091EE10EA000F95FA9 /* message.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,7 +6,6 @@
 #include "business.h"
 #include "sportsTeam.h"
 #include "user.h"
-#include "message.h"
 
 
 class database

@@ -6,10 +6,12 @@
 
 #include <iostream>
 #include <string>
+#include <cstring>
+#include <fstream>
 #include <memory>
+#include <stack>
 #include "account.h"
 #include "business.h"
-#include "message.h"
 #include "sportsTeam.h"
 #include "user.h"
 #include "database.h"
@@ -23,7 +25,10 @@ void displayUsers(const shared_ptr<database> database);
 void sendMessage();
 void viewMessages();
 
-
+//Stacks for messages
+stack<string> userMessages;
+stack<string> sportsTeamMessages;
+stack<string> businessMessages;
 
 int main()
 {
@@ -75,7 +80,8 @@ void registerUser(const shared_ptr<database> mainDatabase) //mainDatabase
     
     string userName;
     cout << "Enter username for your account: ";
-    cin >> userName;
+    cin.ignore();
+    getline(cin, userName);
     cout << endl;
     
     
@@ -86,6 +92,7 @@ void registerUser(const shared_ptr<database> mainDatabase) //mainDatabase
     
     int choice = -1;
     cin >> choice;
+    cin.ignore();
     switch (choice)
     {
         case 1: mainDatabase->addAccount(make_shared<user>(userName)); break;
@@ -106,6 +113,11 @@ void displayUsers(const shared_ptr<database> mainDatabase) //mainDatabase
 
 void sendMessage()
 {
+    
+    string message;
+    cout << "Please enter your messsage." << endl;
+    cin.ignore();
+    getline(cin, message);
     cout << "Who would you like to send a message to?" << endl;
     cout << "1) Users." << endl;
     cout << "2) Sports Teams." << endl;
@@ -115,15 +127,17 @@ void sendMessage()
     
     switch (selection)
     {
-        case 1: break;
-        case 2: break;
-        case 3: break;
+        case 1: userMessages.push(message); break;
+        case 2: sportsTeamMessages.push(message); break;
+        case 3: businessMessages.push(message); break;
         default: break;
         
     }
     
     
 }
+
+
 
 void viewMessages()
 {
@@ -134,12 +148,21 @@ void viewMessages()
     int selection = -1;
     cin >> selection;
     
-    switch (selection)
-    {
-        case 1: break;
-        case 2: break;
-        case 3: break;
-        default: break;
+    if (selection == 1){
+        for (stack<string> dump = userMessages; !dump.empty(); dump.pop())
+        cout << dump.top() << endl;
+        
+    } else if (selection == 2){
+        for (stack<string> dump = sportsTeamMessages; !dump.empty(); dump.pop())
+        cout << dump.top() << endl;
+        
+    } else if (selection == 3){
+        for (stack<string> dump = businessMessages; !dump.empty(); dump.pop())
+        cout << dump.top() << endl;
+        
+    } else {
+        cout << "Please enter a valid selection!" << endl;
+        
     }
 
 }
